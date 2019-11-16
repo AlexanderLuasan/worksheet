@@ -3,7 +3,7 @@
 
 
 class task:
-	def __inti__(t,d,p):
+	def __init__(t,d,p):
 		self.time = t
 		self.deadline = d
 		self.profit = p
