@@ -1,5 +1,5 @@
 
-
+import alex
 
 
 class task:
@@ -10,6 +10,7 @@ class task:
 
 def main():
 	test1 = [[2,4,1],[1,3,2],[2,2,2]]
+	print(alex.tasks(test1,len(test1),5));
 	print("hello")
 
 
