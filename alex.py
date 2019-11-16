@@ -8,6 +8,10 @@ def tasks(A,n,totalTime):
 	print("test")
 
 
-def subProblem(A,deadline):
-	#for every task in A with A.deadline <= dealine
+#numberOftasks = only consider the first n tasks
+#
+def subProblem(numberOftasks,deadline):
+	
+	
+
 	pass
