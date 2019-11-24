@@ -91,7 +91,7 @@ def subProblem(numberOftasks,deadline):
 			left = data[(numberOftasks,deadline-1)][0]
 		except KeyError:
 			pass
-		if(jump>up and jump>left):
+		if(jump>=up and jump>=left):
 			return [jump,"J"]
 		elif(up>left):
 			return [up,"U"]
