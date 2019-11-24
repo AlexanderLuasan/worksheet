@@ -35,16 +35,19 @@ def backTrack(tasks,deadline):
 	Done = False
 	endingTasks = []
 	while not Done:
+
 		location=data[(tasks,deadline)]
 		direction = location[1]
+		print(tasks,deadline,direction)
 		if(direction == 'U'):
 			tasks-=1
 		if(direction == 'L'):
 			deadline-=1
 		if(direction == 'J'):
 			tasks-=1
-			deadline-=taskList[tasks][0]
-			endingTasks.append(taskList[tasks])
+			deadline-=taskList[tasks+1][0]
+
+			endingTasks.append(taskList[tasks+1])
 
 		if(tasks == 0 or deadline == 0):
 			return endingTasks
